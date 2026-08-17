@@ -326,6 +326,7 @@
 		$data['arsip_acak'] = $this->first_artikel_m->arsip_show('acak');
 		$data['aparatur_desa'] = $this->pamong_model->list_aparatur_desa();
 		$data['stat_widget'] = $this->laporan_penduduk_model->list_data(4);
+		$data['stat_widget_gol_darah'] = $this->laporan_penduduk_model->list_data(7);
 		$data['sinergi_program'] = $this->get_setting('sinergi_program');
 		$data['widget_keuangan'] = $this->keuangan_grafik_model->widget_keuangan();
 	}
