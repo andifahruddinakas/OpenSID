@@ -325,12 +325,18 @@
 		$data['arsip_populer'] = $this->first_artikel_m->arsip_show('populer');
 		$data['arsip_acak'] = $this->first_artikel_m->arsip_show('acak');
 		$data['aparatur_desa'] = $this->pamong_model->list_aparatur_desa();
-		$data['stat_widget'] = $this->laporan_penduduk_model->list_data(4);
-		$data['stat_widget_gol_darah'] = $this->laporan_penduduk_model->list_data(7);
-		$data['stat_widget_umur'] = $this->laporan_penduduk_model->list_data(15);
-		$data['stat_widget_pekerjaan'] = $this->laporan_penduduk_model->list_data(1);
-		$data['stat_widget_status_kawin'] = $this->laporan_penduduk_model->list_data(2);
-		$data['stat_widget_pendidikan'] = $this->laporan_penduduk_model->list_data(0);
+		$daftar_stat_widget = [
+			'stat_widget'               => 4,
+			'stat_widget_gol_darah'     => 7,
+			'stat_widget_umur'          => 15,
+			'stat_widget_pekerjaan'     => 1,
+			'stat_widget_status_kawin'  => 2,
+			'stat_widget_pendidikan'    => 0,
+		];
+		foreach ($daftar_stat_widget as $key => $kode_laporan)
+		{
+			$data[$key] = $this->laporan_penduduk_model->list_data($kode_laporan);
+		}
 		$data['sinergi_program'] = $this->get_setting('sinergi_program');
 		$data['widget_keuangan'] = $this->keuangan_grafik_model->widget_keuangan();
 	}
