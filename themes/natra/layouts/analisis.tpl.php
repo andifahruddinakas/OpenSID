@@ -27,7 +27,7 @@
 					<div class="content_bottom_left">
 						<div class="single_page_area">
 							<?php if($list_jawab): ?>
-								<div class='box'>";
+								<div class='box'>
 									<?php $this->load->view($folder_themes.'/partials/analisis.php'); ?>
 								</div>
 							<?php else: ?>
@@ -65,6 +65,7 @@
 										</div>
 									<?php endforeach; ?>
 								</div>
+							<?php endif; ?>
 							</div>
 						</div>
 					</div>

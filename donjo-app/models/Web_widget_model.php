@@ -327,6 +327,10 @@
 		$data['aparatur_desa'] = $this->pamong_model->list_aparatur_desa();
 		$data['stat_widget'] = $this->laporan_penduduk_model->list_data(4);
 		$data['stat_widget_gol_darah'] = $this->laporan_penduduk_model->list_data(7);
+		$data['stat_widget_umur'] = $this->laporan_penduduk_model->list_data(15);
+		$data['stat_widget_pekerjaan'] = $this->laporan_penduduk_model->list_data(1);
+		$data['stat_widget_status_kawin'] = $this->laporan_penduduk_model->list_data(2);
+		$data['stat_widget_pendidikan'] = $this->laporan_penduduk_model->list_data(0);
 		$data['sinergi_program'] = $this->get_setting('sinergi_program');
 		$data['widget_keuangan'] = $this->keuangan_grafik_model->widget_keuangan();
 	}
