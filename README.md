@@ -23,7 +23,7 @@ OpenSID (https://github.com/OpenSID/OpenSID) adalah Sistem Informasi Desa (SID) 
 - Merekam semua perubahan yang dibuat
 - Memungkinkan kembali ke revisi sebelumnya, apabila diperlukan
 - Memudahkan kolaborasi antar pegiat SID dan juga dengan desa dampingan dalam mengembangkan SID
-- Halo
+- Merdeka
 
 ## 📃 PEDOMAN PENGGUNAAN
 Pedoman pemasangan dan penggunaan OpenSID dapat dilihat di wiki OpenSID di https://github.com/opensid/opensid/wiki.
