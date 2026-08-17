@@ -8,7 +8,7 @@
 			<?php foreach ($w_gal As $data): ?>
 				<?php if (is_file(LOKASI_GALERI . "sedang_" . $data['gambar'])): ?>
 					<a href='<?= site_url("first/sub_gallery/$data[id]"); ?>' title="<?= "Album : $data[nama]" ?>">
-						<img src="<?= AmbilGaleri($data['gambar'],'kecil')?>" width="130" alt="<?= "Album : $data[nama]" ?>">
+						<img src="<?= AmbilGaleri($data['gambar'],'kecil')?>" width="130" alt="<?= "Album : $data[nama]" ?>" loading="lazy">
 					</a>
 				<?php endif; ?>
 			<?php endforeach; ?>
